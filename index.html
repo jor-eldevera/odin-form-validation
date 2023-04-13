@@ -7,7 +7,24 @@
     <title>Form Validation</title>
 </head>
 <body>
-    
+    <form id="infoForm" style="display: flex; flex-direction: column;">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="country">Country:</label>
+        <input type="text" name="country" id="country" required>
+
+        <label for="zipcode">Zip Code:</label>
+        <input type="number" name="zipcode" id="zipcode" required minlength="5">
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required>
+
+        <label for="passwordConfirm">Confirm Password</label>
+        <input type="password" name="passwordConfirm" id="passwordConfirm" required>
+
+        <input type="submit" id="submit" value="Submit">
+    </form>
     <script src="scripts.js"></script>
 </body>
 </html>
